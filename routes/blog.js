@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.get('/add-new', (req, res, next) => {
+router.get('/new-add', (req, res, next) => {
     // This is the middleware part
     if (!req.user) {
         return res.redirect('/user/signin');
